@@ -5,9 +5,9 @@
         <div class="row">
             <div class="col-md-8">
                 <h1 class="font-weight-bold text-dark pt-2 mb-0">Exclude ({{groupingExclude.length}})</h1>
-                <p class=" mb-1" style="display:inline-block" ng-show="paginatingProgress"
+                <p class=" mb-1" ng-show="paginatingProgress"
                    th:text="#{screen.message.common.loading.gettingmembers}"></p>
-                <div class="spinner-border spinner-border-sm" style="display:inline-block"
+                <div class="spinner-border spinner-border-sm"
                      ng-hide="!paginatingProgress"
                      role="status">
                     <span class="sr-only">Loading...</span>
@@ -95,11 +95,11 @@
         <div class="d-lg-flex d-block justify-content-lg-between justify-content-start">
             <div class="col-lg-4 pl-0 pr-0 mt-lg-0 mt-2">
                 <form ng-submit="addMembers('Exclude')">
-                    <div class="input-group" style="width: 500px">
+                    <div class="input-group">
                         <input class="form-control" placeholder="Members to add" type="text"
-                               title="Enter one or more usernames" ng-model="usersToAdd" style="width: 275px"/>
+                               title="Enter one or more usernames" ng-model="usersToAdd"/>
                         <div>
-                            <button class="btn btn-primary" type="submit" style="margin-left: 2px">Add</button>
+                            <button class="btn btn-primary" id="addMembers" type="submit">Add</button>
                             <button class="btn btn-primary"
                                     ng-click="launchImportModal('Exclude')">Import File
                             </button>

@@ -561,3 +561,34 @@ form.seamless button {
     color: #212529;
     font-weight: bold;
 }
+
+/**
+ * Basis, Include,
+ * exclude, and
+ * all members getting members... message display styling.
+ **/
+
+.mb-1 { /* Getting members... message display */
+    display:inline-block;
+}
+
+.spinner-border.spinner-border-sm { /* Getting members message spinner display */
+    display: inline-block;
+}
+
+/**
+ * Styling for adding multiple members into
+ * the include and exclude list.
+ */
+
+.input-group { /* width of the entire members to add section */
+    width: 500px;
+}
+
+.form-control { /* width of the members to add form */
+    width: 285px;
+}
+
+#addMembers{ /* width of the add button for add members */
+    margin-left: 2px;
+}
