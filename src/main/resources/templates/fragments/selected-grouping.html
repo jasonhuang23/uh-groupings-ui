@@ -1,6 +1,6 @@
 <th:block th:fragment="selected-grouping" xmlns:th="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
 
-    <div class="container" id="sel" style="display: none"
+    <div class="container" id="sel"
          th:classappend="${tabContent ? 'card-tab-content' : ''}">
         <div class="card mb-5 mt-5"
              ng-init="changeStyleAttribute('sel', 'display', 'unset')">
@@ -28,10 +28,9 @@
                         <div class="col-md-12">
                             <div ng-show="!descriptionForm">
                                 <p class="text-light mb-0"><b>Description:</b> {{ descriptionDisplay() }} &nbsp;<button
-                                        style="border: none; color: white"
                                         ng-click="editDescription()"
                                         class="clickable fa fa-pencil-square-o mr-2 teal-bg" tabindex="0"
-                                        aria-hidden="true"></button>
+                                        aria-hidden="true" id="editDescription"></button>
                                 </p>
                             </div>
                             <div ng-show="descriptionForm" class="grouping-description-form">
@@ -41,7 +40,7 @@
                                     </div>
                                     <input class="form-control"
                                            aria-label="Grouping Description"
-                                           style="float: left; border: white"
+                                           id="descriptionEdit"
                                            th:title="#{screen.message.admin.selectedGrouping.descriptionFormTitle}"
                                            th:placeholder="#{screen.message.admin.selectedGrouping.descriptionPlaceholder}"
                                            ng-value="descriptionDisplay()"
@@ -52,6 +51,7 @@
                                     />
                                     <span ng-show="descriptionForm" class="grouping-description-form">
                                         <button type="button"
+                                                id="saveDescription"
                                                 style="background-color: white; color: #004252; border: white; margin: 5px;"
                                                 class="btn-sm"
                                                 data-toggle="tooltip" data-placement="top" title="Save description"
