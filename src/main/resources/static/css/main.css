@@ -592,3 +592,21 @@ form.seamless button {
 #addMembers{ /* width of the add button for add members */
     margin-left: 2px;
 }
+
+/**
+ * Selected Grouping fragment styling
+ */
+
+#sel {
+    display: none;
+}
+
+#editDescription { /* edit icon next to description of group */
+    border: none;
+    color: white;
+}
+
+#descriptionEdit { /* input styling for input box of description edits */
+    float: left;
+    border: white;
+}
