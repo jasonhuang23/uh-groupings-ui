@@ -576,10 +576,13 @@ form.seamless button {
     display: inline-block;
 }
 
+/* end
+
+
 /**
  * Styling for adding multiple members into
  * the include and exclude list.
- */
+ **/
 
 .input-group { /* width of the entire members to add section */
     width: 500px;
@@ -593,9 +596,12 @@ form.seamless button {
     margin-left: 2px;
 }
 
+/* end
+
+
 /**
  * Selected Grouping fragment styling
- */
+ **/
 
 #sel {
     display: none;
@@ -610,3 +616,57 @@ form.seamless button {
     float: left;
     border: white;
 }
+
+#saveDescription {
+    background-color: white;
+    color: #004252;
+    border: white;
+    margin: 5px;
+}
+
+#cancelDescription {
+    background-color: white;
+    color: #004252;
+    border: white;
+    margin: 5px;
+}
+
+.card-title.text-light.mb-0 {
+    display: inline-block;
+}
+
+/* end
+
+
+/*
+ * Styling for admin.html modal.
+ */
+
+#adminContainer {
+    display: none;
+}
+
+/* end
+
+
+ */
+/*
+ * Styling for feedback.html modal.
+ */
+
+.alert.alert-success {
+    padding-top: 25px;
+}
+
+/* end
+
+
+/*
+ * Styling for groupings.html modal.
+ */
+
+#groupingsContainer {
+    display: none;
+}
+
+/* end
