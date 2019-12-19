@@ -8,7 +8,7 @@
                 <div class="card-header teal-bg">
                     <div class="row">
                         <div class="col-md-9">
-                            <h2 class="card-title text-light mb-0" style="display:inline-block"> {{
+                            <h2 class="card-title text-light mb-0"> {{
                                 selectedGrouping.name }}</h2>
                         </div>
                         <div class="col-md-3">
@@ -52,7 +52,6 @@
                                     <span ng-show="descriptionForm" class="grouping-description-form">
                                         <button type="button"
                                                 id="saveDescription"
-                                                style="background-color: white; color: #004252; border: white; margin: 5px;"
                                                 class="btn-sm"
                                                 data-toggle="tooltip" data-placement="top" title="Save description"
                                                 ng-click="saveDescription()">
@@ -61,7 +60,7 @@
                                     </span>
                                     <span ng-show="descriptionForm" class="grouping-description-form">
                                         <button type="button"
-                                                style="background-color: white; color: #004252; border: white; margin: 5px;"
+                                                id="cancelDescription"
                                                 class="btn-sm"
                                                 data-toggle="tooltip" data-placement="top" title="Cancel changes"
                                                 ng-click="cancelDescriptionEdit()">
