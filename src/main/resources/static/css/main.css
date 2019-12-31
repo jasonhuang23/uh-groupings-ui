@@ -13,6 +13,8 @@ body {
     flex-direction: column; /* Makes the body display vertical. */
 }
 
+
+
 h1 {
     font-size: 2rem;
 }
@@ -512,6 +514,7 @@ form.seamless button {
 
 #footer-top {
     margin-top: 3rem;
+
 }
 
 .selected {
