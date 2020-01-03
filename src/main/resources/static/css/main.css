@@ -428,7 +428,7 @@ th {
 
 
 #usersToAddInput { /* width of the members to add input box */
-    width: 275 px;
+    width: 275px;
 }
 
 #addMembers{ /* width of the add button for add members */
@@ -605,6 +605,11 @@ th {
 /* end   */
 
 
+#footer-top {
+    margin-top: 3rem;
+}
+
+
 
 
 
@@ -741,9 +746,6 @@ th.grouping-members {
     padding: 7px 15px;;
 }
 
-#footer-top {
-    margin-top: 3rem;
-}
 
 .selected {
     background-color: #004e59;
