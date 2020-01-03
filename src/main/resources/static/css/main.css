@@ -422,12 +422,13 @@ th {
  * the include and exclude list.
  **/
 
-.input-group { /* width of the entire members to add section */
+#usersToAdd { /* width of the entire members to add section */
     width: 500px;
 }
 
-.form-control { /* width of the members to add form */
-    width: 285px;
+
+#usersToAddInput { /* width of the members to add input box */
+    width: 275 px;
 }
 
 #addMembers{ /* width of the add button for add members */
