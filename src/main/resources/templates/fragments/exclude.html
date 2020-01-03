@@ -95,8 +95,8 @@
         <div class="d-lg-flex d-block justify-content-lg-between justify-content-start">
             <div class="col-lg-4 pl-0 pr-0 mt-lg-0 mt-2">
                 <form ng-submit="addMembers('Exclude')">
-                    <div class="input-group">
-                        <input class="form-control" placeholder="Members to add" type="text"
+                    <div class="input-group" id="usersToAdd">
+                        <input class="form-control" id="usersToAddInput" placeholder="Members to add" type="text"
                                title="Enter one or more usernames" ng-model="usersToAdd"/>
                         <div>
                             <button class="btn btn-primary" id="addMembers" type="submit">Add</button>
