@@ -8,11 +8,15 @@ body {
     font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
     padding-top: 3.5rem; /*Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     /*padding-bottom: 3.125rem;*/
-    display: flex;
+    display: flex; /* Creates a flexbox layout */
     min-height: 100vh;
-    flex-direction: column;
+    flex-direction: column; /* Displays all contents in body as columns */
 }
 
+main {
+    flex: 1; /* IMPLEMENTED FOR STICKY FOOTER */
+             /* specifies the length which the contents in main are stretched. */
+}
 
 
 h1 {
@@ -489,9 +493,6 @@ form.seamless button {
     letter-spacing: 1px;
 }
 
-.container {
-    flex: 1;
-}
 
 .fa.fa-fw.fa-pencil-square-o {
     color: #007bff;
@@ -509,7 +510,6 @@ form.seamless button {
 
 #footer-top {
     margin-top: 3rem;
-
 }
 
 .selected {
